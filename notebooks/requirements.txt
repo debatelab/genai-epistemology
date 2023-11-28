@@ -1,0 +1,6 @@
+transformers==4.35.2
+accelerate==0.24.1
+bitsandbytes==0.41.2.post2
+lmql==0.7.0
+pandas
+seaborn
