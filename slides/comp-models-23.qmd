@@ -1,0 +1,42 @@
+---
+title: |
+    | Studying Rational Agency and Epistemic Communities with Large Language Models:
+    | Review, How-To, and Reflection
+subtitle: |
+    | Workshop on Computational Models in Social Epistemology
+    | Bochum, Dec 6-8 2023
+author: "Gregor Betz (DebateLab@KIT)"
+bibliography: references.bib
+format:
+  revealjs:
+    theme: [default, custom.scss]
+embed-resources: true
+---
+
+# Review
+
+## Scratchpad
+
+* review paper agents
+* jasss paper
+* tenenbaum debating paper 
+
+# How-To
+
+## Scratchpad
+
+* jupyter
+
+# Reflection
+
+## Scratchpad
+
+* self-correction
+* AI scientists [@ai4science2023impact]
+
+# Backup
+
+## References
+
+::: {#refs}
+:::
