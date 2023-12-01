@@ -27,12 +27,59 @@ embed-resources: true
 
 * jupyter
 
+```python
+class AbstractClass()
+
+  def method(self):
+    pass
+```
+
 # Reflection
 
 ## Scratchpad
 
-* self-correction
+Why do this?
+
+* Re-create and probe our epistemological (computational) models.
+* Simulate and test scientific methodologies, reasoning modes, principles of rationality. Any!  (E.g. value-free ideal.)
+
+LLMs apt for these purposes?
+
+Papers:
+
+* self-correction (-> reflexive AI)
+* levels of AGI [@morris2023levels]
 * AI scientists [@ai4science2023impact]
+* LLMs as rational doxastic and epistemic agents (DoxLM)
+* (But humans' cognitive architecture is fundamtally different from LLMs', or is it?)
+
+
+* The neural architecture of language: Integrative modeling converges on predictive processing
+Martin Schrimpf et al. 2021
+  * TLDR: It is found that the most powerful “transformer” models predict nearly 100% of explainable variance in neural responses to sentences and generalize across different datasets and imaging modalities (functional MRI and electrocorticography).
+* Brains and algorithms partially converge in natural language processing
+C. CaucheteuxJ. King 2022
+  * TLDR This study shows that modern language algorithms partially converge towards brain-like solutions, and thus delineates a promising path to unravel the foundations of natural language processing.
+* Mapping Brains with Language Models: A Survey Antonia KaramolegkouMostafa AbdouAnders Søgaard Computer Science, Linguistics Annual Meeting of the Association for… 2023
+  * ABSTRACT [...] We also find that the accumulated evidence, for now, remains ambiguous, but correlations with model size and quality provide grounds for cautious optimism.
+* Artificial neural network language models predict human brain responses to language even after a developmentally realistic amount of training. Eghbal A. HosseiniMartin SchrimpfYian ZhangSamuel R. BowmanNoga ZaslavskyEvelina Fedorenko Computer Science, Psychology 2023
+  * TLDR [A] developmentally realistic amount of training may suffice and [...] models that have received enough training to achieve sufficiently high next-word prediction performance also acquire representations of sentences that are predictive of human fMRI responses.
+
+
+
+
+Conclusion:
+
+* LLMs apt for these purposes? ✅
+* vanishing distinctions:
+  - simulating science vs doing science
+  - epistemology vs AI
+* AGI => epistemic redundancy:
+  - what role for humans in the science system
+  - what is AI-proof well-ordered science (science in a democracy?)
+  - science's ultimate "Freudian" offence and blow to humans' collective narcissism?
+
+
 
 # Backup
 

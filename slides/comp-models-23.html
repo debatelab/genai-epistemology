@@ -443,7 +443,7 @@
   <meta name="generator" content="quarto-1.2.247">
 
   <meta name="author" content="Gregor Betz (DebateLab@KIT)">
-  <title>quarto-input03cbc761</title>
+  <title>quarto-input10bb46bb</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -487,6 +487,70 @@ width: 0.8em;
 margin: 0 0.8em 0.2em -1.6em;
 vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ color: #003b4f; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #003b4f; } 
+code span.al { color: #ad0000; } 
+code span.an { color: #5e5e5e; } 
+code span.at { color: #657422; } 
+code span.bn { color: #ad0000; } 
+code span.bu { } 
+code span.cf { color: #003b4f; } 
+code span.ch { color: #20794d; } 
+code span.cn { color: #8f5902; } 
+code span.co { color: #5e5e5e; } 
+code span.cv { color: #5e5e5e; font-style: italic; } 
+code span.do { color: #5e5e5e; font-style: italic; } 
+code span.dt { color: #ad0000; } 
+code span.dv { color: #ad0000; } 
+code span.er { color: #ad0000; } 
+code span.ex { } 
+code span.fl { color: #ad0000; } 
+code span.fu { color: #4758ab; } 
+code span.im { color: #00769e; } 
+code span.in { color: #5e5e5e; } 
+code span.kw { color: #003b4f; } 
+code span.op { color: #5e5e5e; } 
+code span.ot { color: #003b4f; } 
+code span.pp { color: #ad0000; } 
+code span.sc { color: #5e5e5e; } 
+code span.ss { color: #20794d; } 
+code span.st { color: #20794d; } 
+code span.va { color: #111111; } 
+code span.vs { color: #20794d; } 
+code span.wa { color: #5e5e5e; font-style: italic; } 
 div.csl-bib-body { }
 div.csl-entry {
 clear: both;
@@ -1197,6 +1261,10 @@ Gregor Betz (DebateLab@KIT)
 <ul>
 <li>jupyter</li>
 </ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">class</span> AbstractClass()</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="kw">def</span> method(<span class="va">self</span>):</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
 <section id="reflection" class="title-slide slide level1 center">
@@ -1205,9 +1273,50 @@ Gregor Betz (DebateLab@KIT)
 </section>
 <section id="scratchpad-2" class="slide level2">
 <h2>Scratchpad</h2>
+<p>Why do this?</p>
 <ul>
-<li>self-correction</li>
-<li>AI scientists <span class="citation" data-cites="ai4science2023impact">(<a href="#/references" role="doc-biblioref" onclick>AI4Science and Quantum 2023</a>)</span></li>
+<li>Re-create and probe our epistemological (computational) models.</li>
+<li>Simulate and test scientific methodologies, reasoning modes, principles of rationality. Any! (E.g. value-free ideal.)</li>
+</ul>
+<p>LLMs apt for these purposes?</p>
+<p>Papers:</p>
+<ul>
+<li><p>self-correction (-&gt; reflexive AI)</p></li>
+<li><p>levels of AGI <span class="citation" data-cites="morris2023levels">(<a href="#/references" role="doc-biblioref" onclick>Morris et al. 2023</a>)</span></p></li>
+<li><p>AI scientists <span class="citation" data-cites="ai4science2023impact">(<a href="#/references" role="doc-biblioref" onclick>AI4Science and Quantum 2023</a>)</span></p></li>
+<li><p>LLMs as rational doxastic and epistemic agents (DoxLM)</p></li>
+<li><p>(But humans’ cognitive architecture is fundamtally different from LLMs’, or is it?)</p></li>
+<li><p>The neural architecture of language: Integrative modeling converges on predictive processing Martin Schrimpf et al. 2021</p>
+<ul>
+<li>TLDR: It is found that the most powerful “transformer” models predict nearly 100% of explainable variance in neural responses to sentences and generalize across different datasets and imaging modalities (functional MRI and electrocorticography).</li>
+</ul></li>
+<li><p>Brains and algorithms partially converge in natural language processing C. CaucheteuxJ. King 2022</p>
+<ul>
+<li>TLDR This study shows that modern language algorithms partially converge towards brain-like solutions, and thus delineates a promising path to unravel the foundations of natural language processing.</li>
+</ul></li>
+<li><p>Mapping Brains with Language Models: A Survey Antonia KaramolegkouMostafa AbdouAnders Søgaard Computer Science, Linguistics Annual Meeting of the Association for… 2023</p>
+<ul>
+<li>ABSTRACT […] We also find that the accumulated evidence, for now, remains ambiguous, but correlations with model size and quality provide grounds for cautious optimism.</li>
+</ul></li>
+<li><p>Artificial neural network language models predict human brain responses to language even after a developmentally realistic amount of training. Eghbal A. HosseiniMartin SchrimpfYian ZhangSamuel R. BowmanNoga ZaslavskyEvelina Fedorenko Computer Science, Psychology 2023</p>
+<ul>
+<li>TLDR [A] developmentally realistic amount of training may suffice and […] models that have received enough training to achieve sufficiently high next-word prediction performance also acquire representations of sentences that are predictive of human fMRI responses.</li>
+</ul></li>
+</ul>
+<p>Conclusion:</p>
+<ul>
+<li>LLMs apt for these purposes? ✅</li>
+<li>vanishing distinctions:
+<ul>
+<li>simulating science vs doing science</li>
+<li>epistemology vs AI</li>
+</ul></li>
+<li>AGI =&gt; epistemic redundancy:
+<ul>
+<li>what role for humans in the science system</li>
+<li>what is AI-proof well-ordered science (science in a democracy?)</li>
+<li>science’s ultimate “Freudian” offence and blow to humans’ collective narcissism?</li>
+</ul></li>
 </ul>
 </section></section>
 <section>
@@ -1220,6 +1329,9 @@ Gregor Betz (DebateLab@KIT)
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-ai4science2023impact" class="csl-entry" role="doc-biblioentry">
 AI4Science, Microsoft Research, and Microsoft Azure Quantum. 2023. <span>“The Impact of Large Language Models on Scientific Discovery: A Preliminary Study Using GPT-4.”</span> <a href="https://arxiv.org/abs/2311.07361">https://arxiv.org/abs/2311.07361</a>.
+</div>
+<div id="ref-morris2023levels" class="csl-entry" role="doc-biblioentry">
+Morris, Meredith Ringel, Jascha Sohl-dickstein, Noah Fiedel, Tris Warkentin, Allan Dafoe, Aleksandra Faust, Clement Farabet, and Shane Legg. 2023. <span>“Levels of AGI: Operationalizing Progress on the Path to AGI.”</span> <a href="https://arxiv.org/abs/2311.02462">https://arxiv.org/abs/2311.02462</a>.
 </div>
 </div>
 <div class="footer footer-default">
