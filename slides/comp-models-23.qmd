@@ -5,6 +5,7 @@ title: |
 subtitle: |
     | Workshop on Computational Models in Social Epistemology
     | Bochum, Dec 6-8 2023
+    | https://github.com/debatelab/genai-epistemology
 author: "Gregor Betz (DebateLab@KIT)"
 bibliography: references.bib
 format:
@@ -15,11 +16,53 @@ embed-resources: true
 
 # Review
 
-## Scratchpad
+## Autonomous LLM-based in Agents
 
-* review paper agents
-* jasss paper
-* tenenbaum debating paper 
+::: {.r-stack}
+![](figs/WangEtAl2023_cover.png){.fragment .fade-in-then-out width=900}
+
+![](figs/WangEtAl2023_trend.png){.fragment .fade-in-then-out}
+
+![](figs/WangEtAl2023_architecture.png){.fragment}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @wang2023survey
+:::
+
+## Artificial Deliberating Agents
+
+::: {.r-stack}
+![](figs/Betz2022_cover.png){.fragment .fade-in-then-out width=800}
+
+![](figs/Betz2022_architecture.png){.fragment width=800}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @betz2022
+:::
+
+## "Debating" LLMs
+
+::: {.r-stack}
+![](figs/DuEtAl2023_cover.png){.fragment .fade-in-then-out width=800}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @du2023improving
+:::
+
+## "Debating" LLMs
+
+**Prompt:** "These are the solutions to the problem from other agents: \<_other agent responses_\> Using the reasoning from other agents as additional advice, can you give an updated answer? Examine your solution and that other agents. Put your answer in the form (X) at the end of your response."
+
+::: {.r-stack}
+![](figs/DuEtAl2023_results.png){.fragment fragment-index=1}
+:::
+
+::: {.div style="text-align: right;" .fragment fragment-index=1}
+📄 @du2023improving
+:::
 
 # How-To
 
@@ -70,6 +113,22 @@ class NumericalBCAgent(AbstractBCAgent):
 ![](figs/numbc_diffevol.png){.fragment}
 :::
 
+
+## Numerical BC Agent
+
+```{.python}
+class NumericalBCAgent(AbstractBCAgent):
+
+    def distance(self, opinion):
+        """calculates distance between agent's and other opinion"""
+        return abs(opinion - self.opinion)
+
+    def revise(self, opinions):
+        """revision through weighted opinion averaging"""
+        alpha = self._parameters.get("alpha", .5)
+        revision = alpha * self.opinion + (1-alpha) * np.mean(opinions)
+        return revision
+```
 
 ## Large Language Model
 
@@ -127,62 +186,147 @@ class NaturalLanguageBCAgent(AbstractBCAgent):
 ![](figs/nlbc_diffevol50.png){.fragment fragment-index=2}
 :::
 
-## Scratchpad
-
-```{.python code-line-numbers="5-6"}
-import numpy as np
-
-class AbstractClass():
-
-  def method(self, a):
-    pass
-```
 
 
 # Reflection
 
-## Scratchpad
+## Why LLM-based ABMs?
 
-Why do this?
+::: incremental
+1. Re-create and probe our epistemological (computational) models.
+2. Simulate and test scientific methodologies, reasoning modes, principles of rationality.  
+  [**Any!**]{.fragment}
+  [(E.g. value-free ideal.)]{.fragment}
+:::
 
-* Re-create and probe our epistemological (computational) models.
-* Simulate and test scientific methodologies, reasoning modes, principles of rationality. Any!  (E.g. value-free ideal.)
+::: {.fragment}
+🤔 Are LLMs suited for building epistemic agents?
+:::
 
-LLMs apt for these purposes?
+## 🤔 LLMs' abilities: Reasoning? (1/3)
 
-Papers:
+::: {.r-stack}
+![](figs/PanEtAl2023_cover.png){.fragment .fade-in-then-out width=800}
 
-* self-correction (-> reflexive AI)
-* levels of AGI [@morris2023levels]
-* AI scientists [@ai4science2023impact]
-* LLMs as rational doxastic and epistemic agents (DoxLM)
-* (But humans' cognitive architecture is fundamtally different from LLMs', or is it?)
+![](figs/PanEtAl2023_overview.png){.fragment width=900}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @pan2023automatically
+:::
+
+## 🤔 LLMs' abilities: Reasoning? (2/3)
+
+::: {.r-stack}
+![](figs/MorrisEtAl2023_cover.png){.fragment .fade-in-then-out width=700}
+
+![](figs/MorrisEtAl2023_table.png){.fragment width=550}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @morris2023levels
+:::
+
+## 🤔 LLMs' abilities: Reasoning? (3/3)
+
+::: {.r-stack}
+![](figs/MicrosoftAI4Science2023_cover.png){.fragment .fade-in-then-semi-out  width=900}
+
+![](figs/MicrosoftAI4Science2023_highlight.png){.fragment .fade-in-then-out width=950}
+
+![](figs/MicrosoftAI4Science2023_case.png){.fragment width=850}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @ai4science2023impact
+:::
+
+## 🤔 LLMs' abilities: Beliefs?
+
+::: {.r-stack}
+![](figs/Betz2023_DoxLM2_cover.png){.fragment .fade-in-then-out width=900}
+
+![](figs/Betz2023_DoxLM2_overview.png){.fragment width=600}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @BetzRichardson2023
+:::
+
+## 🤔 LLMs' abilities: Unhuman?
+
+But humans' cognitive architecture is fundamentally different from LLMs'
+[, or is it?]{.fragment}
+
+::: {.r-stack}
+![](figs/GoldsteinEtAl2020.png){.fragment width=900}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @Goldstein2020ThinkingAS
+:::
+
+## 🤔 LLMs' abilities: Unhuman? {.smaller}
 
 
-* The neural architecture of language: Integrative modeling converges on predictive processing
-Martin Schrimpf et al. 2021
-  * TLDR: It is found that the most powerful “transformer” models predict nearly 100% of explainable variance in neural responses to sentences and generalize across different datasets and imaging modalities (functional MRI and electrocorticography).
-* Brains and algorithms partially converge in natural language processing
-C. CaucheteuxJ. King 2022
-  * TLDR This study shows that modern language algorithms partially converge towards brain-like solutions, and thus delineates a promising path to unravel the foundations of natural language processing.
-* Mapping Brains with Language Models: A Survey Antonia KaramolegkouMostafa AbdouAnders Søgaard Computer Science, Linguistics Annual Meeting of the Association for… 2023
-  * ABSTRACT [...] We also find that the accumulated evidence, for now, remains ambiguous, but correlations with model size and quality provide grounds for cautious optimism.
-* Artificial neural network language models predict human brain responses to language even after a developmentally realistic amount of training. Eghbal A. HosseiniMartin SchrimpfYian ZhangSamuel R. BowmanNoga ZaslavskyEvelina Fedorenko Computer Science, Psychology 2023
-  * TLDR [A] developmentally realistic amount of training may suffice and [...] models that have received enough training to achieve sufficiently high next-word prediction performance also acquire representations of sentences that are predictive of human fMRI responses.
+📄 The neural architecture of language: Integrative modeling converges on predictive processing. [@doi:10.1073/pnas.2105646118]
+
+::: {.div style="font-size: 0.8em;"}
+TLDR It is found that the most powerful “transformer” models predict nearly 100% of explainable variance in neural responses to sentences and generalize across different datasets and imaging modalities [...].
+:::
+
+📄 Brains and algorithms partially converge in natural language processing. [@caucheteux2022brains]
+
+::: {.div style="font-size: 0.8em;"}
+TLDR This study shows that modern language algorithms partially converge towards brain-like solutions, and thus delineates a promising path to unravel the foundations of natural language processing.
+:::
+
+📄 Mapping Brains with Language Models: A Survey. [@karamolegkou2023mapping]
+
+::: {.div style="font-size: 0.8em;"}
+ABSTRACT [...] We also find that the accumulated evidence, for now, remains ambiguous, but correlations with model size and quality provide grounds for cautious optimism.
+:::
+
+📄 Artificial neural network language models predict human brain responses to language even after a developmentally realistic amount of training. [@hosseini2022artificial]
+
+::: {.div style="font-size: 0.8em;"}
+TLDR [A] developmentally realistic amount of training may suffice and [...] models that have received enough training to achieve sufficiently high next-word prediction performance also acquire representations of sentences that are predictive of human fMRI responses.
+:::
 
 
+## Conclusion
+
+LLMs suited for building epistemic agents?
+
+::: incremental
+* ✅ reasoning skill
+* ✅ consistent belief states (syn- and diachronic)
+* ✅ similarities to human cognition
+:::
+
+[Come, join the party! 🎉]{.r-fit-text .fragment}
 
 
-Conclusion:
+## Conclusion
 
-* LLMs apt for these purposes? ✅
-* vanishing distinctions:
-  - simulating science vs doing science
-  - epistemology vs AI
-* AGI => epistemic redundancy:
-  - what role for humans in the science system
-  - what is AI-proof well-ordered science (science in a democracy?)
-  - science's ultimate "Freudian" offence and blow to humans' collective narcissism?
+Vanishing distinctions (due to AGI):
+
+::: incremental
+* simulating science *vs* doing science
+* epistemology *vs* AI
+:::
+
+
+## Conclusion
+
+Epistemic redundancy (due to AGI) brings profound philosophical challenges:
+
+::: incremental
+* What role for humans in science? University?
+* Science in a democracy? AGI-proof well-ordered science?
+* If AGI is science's ultimate "Freudian" offence and blow to humans' collective narcissism, which revisions of our self-conception (as rational & moral persons) may avoid existentialist disaster? AGI-proof humanism?
+:::
+
 
 
 
