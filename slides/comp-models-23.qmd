@@ -8,7 +8,8 @@ subtitle: |
     | https://github.com/debatelab/genai-epistemology
 author: "Gregor Betz (DebateLab@KIT)"
 bibliography: references.bib
-format:
+format: 
+  gfm: default
   revealjs:
     theme: [default, custom.scss]
 embed-resources: true

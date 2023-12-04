@@ -5,11 +5,6 @@ Review, How-To, and Reflection
 ================
 Gregor Betz (DebateLab@KIT)
 
-<!--
-  revealjs:
-    theme: [default, custom.scss]
--->
-
 # Review
 
 ## Autonomous LLM-based in Agents
