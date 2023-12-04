@@ -8,5 +8,7 @@ Resources to get started with GenAI in epistemology.
 ## Studying Rational Agency and Epistemic Communities with Large Language Models: Review, How-To, and Reflection 
 
 * Talk by [@ggbetz](https://github.com/ggbetz) at the "Workshop on Computational Models in Social Epistemology", Bochum, Dec 6-8 2023
-* Slides: [html](slides/comp-models-23.html)
+* Slides: 
+    - [github](slides/comp-models-23.md)
+    - [html](slides/comp-models-23.html) (download and open local file in browser)
 * Jupyter Notebook: [ipynb](notebooks/bounded_confidence_llm.ipynb)
