@@ -2,7 +2,7 @@
 
 Resources to get started with GenAI in epistemology.
 
-> [INFO!]
+> [!NOTE]
 > Don't hesitate to submit an issue in case you've questions or suggestions. 
 
 ## Studying Rational Agency and Epistemic Communities with Large Language Models Review, How-To, and Reflection 
