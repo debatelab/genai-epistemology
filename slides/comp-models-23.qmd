@@ -9,9 +9,9 @@ subtitle: |
 author: "Gregor Betz (DebateLab@KIT)"
 bibliography: references.bib
 format:
-  gfm: default
   revealjs:
     theme: [default, custom.scss]
+  gfm: default
 embed-resources: true
 ---
 
@@ -31,6 +31,17 @@ embed-resources: true
 📄 @wang2023survey
 :::
 
+
+::: {.notes}
+Let me first point you to this recent review of LLM-based agents.
+
+More and more highly diverse agents build with LLMs (CoT, ToolFormer)
+
+Blue boxes: Groups of agents that communicate in NL and internally plan and act by generating NL texts
+
+:::
+
+
 ## Artificial Deliberating Agents
 
 ::: {.r-stack}
@@ -41,6 +52,17 @@ embed-resources: true
 
 ::: {.div style="text-align: right; font-size: 0.7em;"}
 📄 @betz2022
+:::
+
+::: {.notes}
+
+Three years ago, I used LLM-based agents to probe the Mäs-Flache model of argumentative opinion dynamics.
+
+In this model, agents are exchanging reasons that form the basis of their individual beliefs. With LLMs we can build agents that can directly process English sentence (pros and cons in debate), rather than their abstract symbolic representation.
+
+The main findings are:
+1. Confirmation: NL models can reproduce basic dynamics of sybolic models
+2. Limitations: Allowing agents to generate new reasons (rather than simply exchanging given ones) changes dynamics profoundly
 :::
 
 ## "Debating" LLMs
@@ -197,7 +219,8 @@ class NaturalLanguageBCAgent(AbstractBCAgent):
 1. Re-create and probe our epistemological (computational) models.
 2. Simulate and test scientific methodologies, reasoning modes, principles of rationality.  
   [**Any!**]{.fragment}
-  [(E.g. value-free ideal.)]{.fragment}
+  [(E.g. value-free ideal.)]{.fragment}  
+  [Without formalizing them.]{.fragment}
 :::
 
 ::: {.fragment}

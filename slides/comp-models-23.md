@@ -27,6 +27,17 @@ class="fragment fade-in-then-out" />
 
 </div>
 
+<div class="notes">
+
+Let me first point you to this recent review of LLM-based agents.
+
+More and more highly diverse agents build with LLMs (CoT, ToolFormer)
+
+Blue boxes: Groups of agents that communicate in NL and internally plan
+and act by generating NL texts
+
+</div>
+
 ## Artificial Deliberating Agents
 
 <div class="r-stack">
@@ -42,6 +53,23 @@ width="800" />
 <div class="div" style="text-align: right; font-size: 0.7em;">
 
 📄 Betz (2022)
+
+</div>
+
+<div class="notes">
+
+Three years ago, I used LLM-based agents to probe the Mäs-Flache model
+of argumentative opinion dynamics.
+
+In this model, agents are exchanging reasons that form the basis of
+their individual beliefs. With LLMs we can build agents that can
+directly process English sentence (pros and cons in debate), rather than
+their abstract symbolic representation.
+
+The main findings are: 1. Confirmation: NL models can reproduce basic
+dynamics of sybolic models 2. Limitations: Allowing agents to generate
+new reasons (rather than simply exchanging given ones) changes dynamics
+profoundly
 
 </div>
 
@@ -222,7 +250,8 @@ data-fragment-index="2" />
 2.  Simulate and test scientific methodologies, reasoning modes,
     principles of rationality.  
     <span class="fragment">**Any!**</span> <span class="fragment">(E.g.
-    value-free ideal.)</span>
+    value-free ideal.)</span>  
+    <span class="fragment">Without formalizing them.</span>
 
 </div>
 
