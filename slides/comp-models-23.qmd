@@ -8,9 +8,10 @@ subtitle: |
 author: "Gregor Betz (DebateLab@KIT)"
 bibliography: references.bib
 format:
-  revealjs: 
-    theme: [default, custom.scss]
+  revealjs:
+    slide-number: true
     pdf-separate-fragments: true
+    theme: [default, custom.scss]
   gfm: default
 embed-resources: true
 ---
