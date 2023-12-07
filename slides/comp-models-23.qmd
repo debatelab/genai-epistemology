@@ -1,7 +1,6 @@
 ---
-title: |
-    | Studying Rational Agency and Epistemic Communities with Large Language Models:
-    | Review, How-To, and Reflection
+title: "Studying Rational Agency and Epistemic Communities with Large Language Models:<br/>
+    Review, How-To, and Reflection"
 subtitle: |
     | Workshop on Computational Models in Social Epistemology
     | Bochum, Dec 6-8 2023
@@ -9,8 +8,9 @@ subtitle: |
 author: "Gregor Betz (DebateLab@KIT)"
 bibliography: references.bib
 format:
-  revealjs:
+  revealjs: 
     theme: [default, custom.scss]
+    pdf-separate-fragments: true
   gfm: default
 embed-resources: true
 ---
@@ -88,6 +88,14 @@ The main findings are:
 :::
 
 # How-To
+
+## Code Boilerplate {.smaller}
+
+::: {.r-stack}
+![](figs/ipynb-boilerplate.png){width=800}
+:::
+
+[https://github.com/debatelab/genai-epistemology](https://github.com/debatelab/genai-epistemology)
 
 ## Skeleton Bounded Confidence Agent
 

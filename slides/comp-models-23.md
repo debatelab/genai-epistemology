@@ -1,7 +1,5 @@
 Studying Rational Agency and Epistemic Communities with Large Language
-Models:  
-Review, How-To, and Reflection
-
+Models:<br/> Review, How-To, and Reflection
 ================
 Gregor Betz (DebateLab@KIT)
 
@@ -110,6 +108,16 @@ data-fragment-index="1" />
 </div>
 
 # How-To
+
+## Code Boilerplate
+
+<div class="r-stack">
+
+<img src="figs/ipynb-boilerplate.png" width="800" />
+
+</div>
+
+<https://github.com/debatelab/genai-epistemology>
 
 ## Skeleton Bounded Confidence Agent
 
