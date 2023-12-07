@@ -113,7 +113,7 @@ data-fragment-index="1" />
 
 <div class="r-stack">
 
-<img src="figs/ipynb-boilerplate.png" width="800" />
+<img src="figs/ipynb-boilerplate.png" width="900" />
 
 </div>
 

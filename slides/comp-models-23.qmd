@@ -93,7 +93,7 @@ The main findings are:
 ## Code Boilerplate {.smaller}
 
 ::: {.r-stack}
-![](figs/ipynb-boilerplate.png){width=800}
+![](figs/ipynb-boilerplate.png){width=900}
 :::
 
 [https://github.com/debatelab/genai-epistemology](https://github.com/debatelab/genai-epistemology)
