@@ -162,6 +162,45 @@ class NumericalBCAgent(AbstractBCAgent):
         return revision
 ```
 
+## (Initial) Opinions
+
+``` {.python code-line-numbers="false"}
+[
+    #1
+    "Consuming a vegan diet directly contributes to reducing greenhouse "
+    "gas emissions, as animal agriculture is a significant source of "
+    "environmental pollution.",
+    #2
+    "The scientific evidence supports the health benefits of a vegan diet, "
+    "which can lead to a reduced risk of various diseases, such as diabetes, "
+    "high blood pressure, and some cancers.",
+    #3
+    "Veganism doesn't support a healthy and balanced diet.",
+    #4
+    "There is a negative impact on the environment and economy when people "
+    "follow a vegan diet.",
+    #5
+    "A vegan diet can prevent certain types of cancer.",
+    #6
+    "Reducing meat consumption is necessary to avoid a global food crisis.",
+    #7
+    "Contrary to popular belief, studies suggest that a well-planned "
+    "traditional omnivorous diet may reduce the risk of certain diseases "
+    "compared to a vegan diet.",
+    #8
+    "While plant-based diets have their benefits, they are not always easy "
+    "to stick to in the long run.",
+    #9
+    "As someone who has been vegan for over a year, my energy levels have "
+    "increased significantly while my risk of certain diseases has decreased.",
+    #10
+    "My personal experience as a vegan for two years has been plagued with "
+    "deficiencies and malnutrition, leading to low energy levels and "
+    "compromised health."
+]
+```
+
+
 ## Large Language Model
 
 ```{.python code-line-numbers="2"}
@@ -365,7 +404,31 @@ Epistemic redundancy (due to AGI) brings profound philosophical challenges:
 
 # Backup
 
+
+
 ## References
 
 ::: {#refs}
 :::
+
+## Consensus in Multi-Agent LLM Debates
+
+::: {.r-stack}
+![](figs/DuEtAl2023_consensus.png)
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @du2023improving
+:::
+
+## LLMs solve dynamic armed-bandits
+
+::: {.r-stack}
+![](figs/Curto2023_bandits.png){width=750}
+:::
+
+::: {.div style="text-align: right; font-size: 0.7em;"}
+📄 @electronics12132814
+:::
+
+

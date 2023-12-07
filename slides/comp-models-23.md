@@ -184,6 +184,44 @@ class NumericalBCAgent(AbstractBCAgent):
         return revision
 ```
 
+## (Initial) Opinions
+
+``` python
+[
+    #1
+    "Consuming a vegan diet directly contributes to reducing greenhouse "
+    "gas emissions, as animal agriculture is a significant source of "
+    "environmental pollution.",
+    #2
+    "The scientific evidence supports the health benefits of a vegan diet, "
+    "which can lead to a reduced risk of various diseases, such as diabetes, "
+    "high blood pressure, and some cancers.",
+    #3
+    "Veganism doesn't support a healthy and balanced diet.",
+    #4
+    "There is a negative impact on the environment and economy when people "
+    "follow a vegan diet.",
+    #5
+    "A vegan diet can prevent certain types of cancer.",
+    #6
+    "Reducing meat consumption is necessary to avoid a global food crisis.",
+    #7
+    "Contrary to popular belief, studies suggest that a well-planned "
+    "traditional omnivorous diet may reduce the risk of certain diseases "
+    "compared to a vegan diet.",
+    #8
+    "While plant-based diets have their benefits, they are not always easy "
+    "to stick to in the long run.",
+    #9
+    "As someone who has been vegan for over a year, my energy levels have "
+    "increased significantly while my risk of certain diseases has decreased.",
+    #10
+    "My personal experience as a vegan for two years has been plagued with "
+    "deficiencies and malnutrition, leading to low energy levels and "
+    "compromised health."
+]
+```
+
 ## Large Language Model
 
 ``` python
@@ -487,6 +525,15 @@ Biology* 5 (1): 134.
 
 </div>
 
+<div id="ref-electronics12132814" class="csl-entry">
+
+Curtò, J. de, I. de Zarzà, Gemma Roig, Juan Carlos Cano, Pietro Manzoni,
+and Carlos T. Calafate. 2023. “LLM-Informed Multi-Armed Bandit
+Strategies for Non-Stationary Environments.” *Electronics* 12 (13).
+<https://doi.org/10.3390/electronics12132814>.
+
+</div>
+
 <div id="ref-du2023improving" class="csl-entry">
 
 Du, Yilun, Shuang Li, Antonio Torralba, Joshua B. Tenenbaum, and Igor
@@ -558,5 +605,33 @@ Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based
 Autonomous Agents.” <https://arxiv.org/abs/2308.11432>.
 
 </div>
+
+</div>
+
+## Consensus in Multi-Agent LLM Debates
+
+<div class="r-stack">
+
+![](figs/DuEtAl2023_consensus.png)
+
+</div>
+
+<div class="div" style="text-align: right; font-size: 0.7em;">
+
+📄 Du et al. (2023)
+
+</div>
+
+## LLMs solve dynamic armed-bandits
+
+<div class="r-stack">
+
+<img src="figs/Curto2023_bandits.png" width="750" />
+
+</div>
+
+<div class="div" style="text-align: right; font-size: 0.7em;">
+
+📄 Curtò et al. (2023)
 
 </div>
